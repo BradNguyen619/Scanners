@@ -1,25 +1,20 @@
 import java.util.Scanner;
 
-public class MyScanner
+public class Prompt4Scanner
 {
 
     public void run() {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in).useDelimiter(",");
         while (true) {
             if (scanner.hasNext()) {
                 String str = scanner.next();
                 System.out.println(str);
             }
-            if (scanner.hasNextInt()) {
-                int integer = scanner.nextInt();
-                
-            }
         }
     }
 
     public static void main(String[] args) {
-        MyScanner myScanner = new MyScanner();
+        Prompt4Scanner myScanner = new Prompt4Scanner();
         myScanner.run();
     }
 }
-
