@@ -4,7 +4,7 @@ public class Prompt4Scanner
 {
 
     public void run() {
-        Scanner scanner = new Scanner(System.in).useDelimiter(",");
+        Scanner scanner = new Scanner(System.in).useDelimiter(",|\\n");
         while (true) {
             if (scanner.hasNext()) {
                 String str = scanner.next();
